@@ -4,3 +4,15 @@ body{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 20px;
 }
+
+a{
+    color: azure;
+    text-decoration: none;
+
+}
+a:visited{
+    color: bisque;
+}
+a:hover, a:active{
+    color: red
+}
