@@ -8,21 +8,33 @@
     <link rel="stylesheet" href="main.css" type="text/css">
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="#schedules">Schedules</a></li>
-            <li><a href="#roles">Roles</a></li>
-            <li><a href="#vacation">Vacation</a></li>
-        </ul>
-    </nav>
+    <header>
+        <h1>My Goal For the Year</h1>
+        <nav>
+            <ul>
+                <li><a href="#schedules">Schedules</a></li>
+                <li><a href="#roles">Roles</a></li>
+                <li><a href="#vacation">Vacation</a></li>
+            </ul>
+        </nav>
+    </header>
     <hr>
-    <h1>My first html crush course</h1>
-    <img src="images/ht5.jpggit " alt="HTML5" title="	learn HTML5" width="300px" height="300px">
+   <main>
+    <article>
+        <h2>My first html crush course</h2>
+    <img src="images/ht5.jpg " alt="HTML5" title="	learn HTML5" width="300px" height="300px">
     <p>This is my first html web page. I will be creating more of this</p>
     <abbr title="World Wide Web">WWW</abbr>
     <br><br><br>
-    <abbr title="Mozilla Developer Network"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">MDN</a></abbr>
-
+    <abbr title="Mozilla Developer Network"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">MDN</a></abbr> <br><br>
+    <aside>
+        <details>
+            <summary>Guess the <mark>number hours</mark> i code per day</summary>
+            <p>I start at <time datetime="5:00">5am </date>and code <time datetime ="PT3H">3 hours</time>every morning before i go to bed</p>
+        </details>
+    </aside>
+    </article>
+   </main>
    <section id="schedules">
     <h2>My daily schedules</h2>
     <ul>
@@ -67,11 +79,180 @@
         
     </ol>
    <hr>
+   <section>
+    <table>
+        <caption>Calendar For Every Week</caption>
+        <thead>
+            <tr>
+                <th>&nbsp;</th>
+                <th scope="col">Time</th>
+                <th scope="col">Activities</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">Dawn</th>
+                <td><time datetime="4:00">4am</time> -- <time datetime="5:00">5am</time></td>
+                <td>Quiet time</td>
+            </tr>
+            <tr>
+                <th scope="row">Morning</th>
+                <td><time datetime="5:30">5:30am</time> --- <time datetime="8:00">8am</time></td>
+                <td>I write codes</td>
+            </tr>
+            <tr>
+                <th scope="row">Morning</th>
+                <td><time datetime="9:00">9am</time> -- <time datetime="11:00">11am</time></td>
+                <td>Prepare for Class</td>
+            </tr>
+            <tr>
+                <th scope="row">Afternoon</th>
+                <td><time datetime="11:00">11am</time> -- <time datetime="12:00">12am</time></td>
+                <td>I take Lunch</td>
+            </tr>
+            <tr>
+                <th scope="row">Evening</th>
+                <td rowspan="2"> <time datetime="4pm">4pm</time> -- <time datetime="7pm">7pm</time></td>
+                <td>Go to the Gym</td>
+            </tr>
+            <tr>
+                <th scope="row">Night</th>
+                <td>Take a nap</td>
+            </tr>
+            <tr>
+                <td colspan="3">I do this every single day. My life is boring i guess.</td>
+            </tr>
+        </tbody>
+    </table>
+   </section>
+   <hr>
+   <article id="contact">
+    <h2>Contact Me.</h2>
+    <p>I will be very happy to hear from you!!</p>
+    <form action="https://httpbin.org/get" method="get">
+        <fieldset>
+            <legend>Personal Info</legend>
+       <p>
+        <label for="firstName">First Name:</label>
+        <input type="text" name="firstName" id="firstName" autocomplete="on" autofocus placeholder="Enter First name" required>
+       </pp>
+        <p>
+            <label for="lastName">Last Name:</label>
+        <input type="text" name="lastName" id="lastName" autocomplete="on" placeholder="Enter Last name" required>
+        </p>
+        <p>
+            <label for="password">Password:</label>
+        <input type="password" name="password" id="password"  placeholder="Enter password" required>
+        </p>
+        <p>
+            <label for="phone">Phone:</label>
+        <input type="tel" name="phone" id="phone"  placeholder="5550540230" pattern="[0-9]{4}[0-9]{3}[0-9]{3}" required>
+        </p>
+        <p>
+            <label for="decade">Favorite Decade:</label>
+        <input type="number" name="decade" id="decade"  min="1950" max="2025" step="10" value="1960">
+        </p>
+        <!-- <p>
+            <label for="ice-cream">Favorite Ice cream:</label>
+            <select name="ice-cream" id="ice-cream">
+                <optgroup label="Regular">
+                <option value="vanilla">Vanilla</option>
+                <option value="chocolate">Chocolate</option>
+            </optgroup>
+            <optgroup label="Express">
+                <option value="fan ice">Fan ice</option>
+                <option value="frosty bite" selected>Frosty bite</option>
+                <option value="fan pop">Fan pop</option>
+                <option value="yoghurt">Yoghurt</option>
+            </optgroup>
+            <option value="other">Other</option>
+            </select>
+        </p> -->
+        <p>
+            <label for="ice-cream">Favorite ice cream:</label>
+            <input type="text" name="ice-cream" id="ice-cream" list="ice">
+            <datalist id="ice">
+                   <optgroup label="Regular">
+                <option value="vanilla">Vanilla</option>
+                <option value="chocolate">Chocolate</option>
+            </optgroup>
+            <optgroup label="Express">
+                <option value="fan ice">Fan ice</option>
+                <option value="frosty bite" selected>Frosty bite</option>
+                <option value="fan pop">Fan pop</option>
+                <option value="yoghurt">Yoghurt</option>
+            </optgroup>
+            <option value="other">Other</option>
+            </datalist>
+        </p>
+    </fieldset>
+    <br>
+    <fieldset>
+        <legend>
+            What is your Ideal City for Vacation?
+        </legend>
+       <p>
+        <input type="radio" name="city" id="miami">
+        <label for="miami">Miami</label>
+       </p>
+       <p>
+        <input type="radio" name="city" id="Dubai">
+        <label for="Dubai">Dubai</label>
+       </p>
+       <p>
+        <input type="radio" name="city" id="manchester">
+        <label for="manchester">Manchester</label>
+       </p>
+       <p>
+        <input type="radio" name="city" id="toronto">
+        <label for="toronto">Toronto</label>
+       </p>
+       <p>
+        <input type="radio" name="city" id="new-york">
+        <label for="new-york">New York</label>
+       </p>
+    </fieldset>
+    <br>
+    <fieldset>
+        <legend>Your Dream Car</legend>
+        <p>
+            <input type="checkbox" name="cars" id="bmw">
+            <label for="bmw">BMW</label>
+        </p>
+        <p>
+            <input type="checkbox" name="cars" id="benz">
+            <label for="benz">Benz</label>
+        </p>
+        <p>
+            <input type="checkbox" name="cars" id="lexus">
+            <label for="lexus">Lexus</label>
+        </p>
+        <p>
+            <input type="checkbox" name="cars" id="bentley">
+            <label for="bentley">Bentley</label>
+        </p>
+    </fieldset>
+    <br>
+    <fieldset>
+        <legend>Send me a Note</legend>
+        <label for="message">Your Message:</label>
+        <br>
+        <textarea name="message" id="message" placeholder="Type your message here" rows="10" cols="40"></textarea>
+    </fieldset>
+    <br>
+    <button type="submit">Submit</button>
+    <button type="submit" formaction="https://httpbin.org/post" formmethod="post">Post</button>
+    <button type="reset">Reset</button>
+        </form>
+   </article>
+   <br><br><br>
+   <footer>
     <a href="about.html">Ransford antwi</a> 
 
     <p>
         <a href="#">Back to top</a>
     </p>
+   </footer>
     
 </body>
 </html>

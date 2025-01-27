@@ -20,3 +20,19 @@ a:hover, a:active{
 ul{
     list-style: none;
 }
+
+table, tr, th, td, caption{
+    border: 1px solid gainsboro;
+    border-collapse: collapse;
+    text-align: center;
+    padding: 10px;
+}
+th{
+    color: aquamarine;
+}
+caption{
+    font-size: 25px;
+    background-color: burlywood;
+    color: black;
+}
+
